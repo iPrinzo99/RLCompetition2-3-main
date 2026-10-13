@@ -1,4 +1,5 @@
 # RLCompetition2-3-main
+<<<<<<< HEAD
 
 Reproducible implementation and investigation of policy iteration, value iteration,
 SARSA, and Q-learning on the exact CIS 5930 Competition 1 Icy Grid World.
@@ -111,3 +112,6 @@ algorithm rankings. Exact policy evaluation describes the underlying discounted
 MDP; 500-step rollout return and success rate describe a separate capped metric.
 
 No upload or submission is performed by the experiment scripts.
+=======
+Repository housing reinforcement learning algorithms, training pipelines, and experimental runs for competition tasks.
+>>>>>>> d307a0f4b72893f372ed62479250e9594fb50243
