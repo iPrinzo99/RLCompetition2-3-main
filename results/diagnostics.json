@@ -1,0 +1,71 @@
+{
+  "states": [
+    {
+      "state": [
+        16,
+        10
+      ],
+      "reference_action": 1,
+      "sarsa_action": 1,
+      "q_learning_action": 3,
+      "reference_q": [
+        46.63343422518958,
+        48.1610542304905,
+        46.63343422518959,
+        44.82975744191263
+      ],
+      "sarsa_action_gap": 0.0,
+      "q_learning_action_gap": 3.331296788577866
+    },
+    {
+      "state": [
+        17,
+        8
+      ],
+      "reference_action": 1,
+      "sarsa_action": 0,
+      "q_learning_action": 3,
+      "reference_q": [
+        41.94166258711625,
+        41.98605278996632,
+        39.1521426918454,
+        39.14453604559851
+      ],
+      "sarsa_action_gap": 0.044390202850074445,
+      "q_learning_action_gap": 2.8415167443678158
+    },
+    {
+      "state": [
+        18,
+        8
+      ],
+      "reference_action": 0,
+      "sarsa_action": 3,
+      "q_learning_action": 0,
+      "reference_q": [
+        40.19931526481763,
+        40.063793713107984,
+        37.388277405978485,
+        37.43081536832365
+      ],
+      "sarsa_action_gap": 2.768499896493978,
+      "q_learning_action_gap": 0.0
+    }
+  ],
+  "comparisons": {
+    "fixed": {
+      "sarsa_minus_qlearning_mean": -0.10883376208669215,
+      "paired_t_95_interval": [
+        -2.1514981521119454,
+        1.933830627938561
+      ]
+    },
+    "decay": {
+      "sarsa_minus_qlearning_mean": 0.5602820804286874,
+      "paired_t_95_interval": [
+        -0.24783782940991084,
+        1.3684019902672857
+      ]
+    }
+  }
+}

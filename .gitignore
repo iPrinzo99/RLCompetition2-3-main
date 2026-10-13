@@ -1,0 +1,22 @@
+# Python environments and generated files
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Scratch files (including PDF review renders)
+tmp/

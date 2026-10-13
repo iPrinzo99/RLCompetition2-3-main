@@ -1,0 +1,2 @@
+# Install the local package, its Gymnasium 1.x dependency, and test tooling.
+-e .[test]

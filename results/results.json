@@ -1,0 +1,2754 @@
+{
+  "config": {
+    "gamma": 0.99,
+    "budget": 1000000,
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "evaluation_episodes": 1000,
+    "alpha": 0.1,
+    "fixed_epsilon": 0.1,
+    "decay": "linear 1.0 to 0.02 over first 80% of transition budget, then 0.02",
+    "tie_rule": "smallest action ID; planner tolerance 1e-10",
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "gymnasium": "1.3.0"
+  },
+  "planning": {
+    "policy_iteration": {
+      "value_start": 26.28282217404442,
+      "start_gap": -7.111111699487083e-11,
+      "max_state_gap": 1.4210854715202004e-14,
+      "exact_capped_return": 26.28282217404443,
+      "exact_success_500": 1.0,
+      "optimal_actions_fraction": 1.0,
+      "mean_action_gap": 0.0,
+      "improvement_rounds": 10,
+      "seconds": 0.009539792000055058,
+      "residual": 2.842170943040401e-14,
+      "rollout": {
+        "episodes": 1000,
+        "goals": 1000,
+        "success_rate": 1.0,
+        "mean_capped_return": 26.331988106297285,
+        "mean_steps": 46.808,
+        "mean_success_steps": 46.808
+      }
+    },
+    "value_iteration": {
+      "value_start": 26.28282217404442,
+      "start_gap": -7.111111699487083e-11,
+      "max_state_gap": 1.4210854715202004e-14,
+      "exact_capped_return": 26.28282217404443,
+      "exact_success_500": 1.0,
+      "optimal_actions_fraction": 1.0,
+      "mean_action_gap": 0.0,
+      "sweeps": 108,
+      "seconds": 0.0024851249999073843,
+      "residual": 4.498090788729314e-11,
+      "rollout": {
+        "episodes": 1000,
+        "goals": 1000,
+        "success_rate": 1.0,
+        "mean_capped_return": 26.331988106297285,
+        "mean_steps": 46.808,
+        "mean_success_steps": 46.808
+      }
+    }
+  },
+  "runs": [
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 0,
+      "metrics": {
+        "value_start": 23.259384520357457,
+        "start_gap": 3.0234376536158507,
+        "max_state_gap": 82.07887231282984,
+        "exact_capped_return": 23.259384520310086,
+        "exact_success_500": 0.9999999991698604,
+        "optimal_actions_fraction": 0.6638176638176638,
+        "mean_action_gap": 0.3837060190585859,
+        "seconds": 9.300695958000006,
+        "episodes": 14842,
+        "training_goals": 14669,
+        "training_timeouts": 173,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.35960810247652,
+          "mean_steps": 49.223,
+          "mean_success_steps": 49.223
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 5,
+        "behavior_value_eps_0.1": 16.213220711125423,
+        "behavior_value_eps_0.02": 21.944213893649888
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999954983139,
+          "start_gap": 126.28282172380469,
+          "max_state_gap": 176.20109447934615,
+          "exact_capped_return": -99.3429515291382,
+          "exact_success_500": 6.464767331438213e-08,
+          "optimal_actions_fraction": 0.245014245014245,
+          "mean_action_gap": 1.5070104884450395
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99975301757951,
+          "start_gap": 126.28257519155281,
+          "max_state_gap": 172.3687104581914,
+          "exact_capped_return": -99.34281953838313,
+          "exact_success_500": 4.2220161965114056e-05,
+          "optimal_actions_fraction": 0.2792022792022792,
+          "mean_action_gap": 1.42640146368219
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.259384520357457,
+          "start_gap": 3.0234376536158507,
+          "max_state_gap": 82.07887231282984,
+          "exact_capped_return": 23.259384520310086,
+          "exact_success_500": 0.9999999991698604,
+          "optimal_actions_fraction": 0.6638176638176638,
+          "mean_action_gap": 0.3837060190585859
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 1,
+      "metrics": {
+        "value_start": 22.87514846649549,
+        "start_gap": 3.4076737074778194,
+        "max_state_gap": 140.15174383441203,
+        "exact_capped_return": 22.875148557326405,
+        "exact_success_500": 0.9999998559825023,
+        "optimal_actions_fraction": 0.6011396011396012,
+        "mean_action_gap": 0.4845557239605548,
+        "seconds": 8.434871791999967,
+        "episodes": 14900,
+        "training_goals": 14718,
+        "training_timeouts": 182,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.06160088009761,
+          "mean_steps": 49.464,
+          "mean_success_steps": 49.464
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 6,
+        "behavior_value_eps_0.1": 15.678722346962896,
+        "behavior_value_eps_0.02": 21.532123301058956
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9974756732936,
+          "start_gap": 126.2802978472669,
+          "max_state_gap": 171.41099060682353,
+          "exact_capped_return": -99.34077304955284,
+          "exact_success_500": 0.00025094962318999807,
+          "optimal_actions_fraction": 0.28774928774928776,
+          "mean_action_gap": 1.4333216309485555
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.9980853392817,
+          "start_gap": 126.28090751325502,
+          "max_state_gap": 171.69635490780934,
+          "exact_capped_return": -99.3415621811893,
+          "exact_success_500": 0.00030358465945735583,
+          "optimal_actions_fraction": 0.28774928774928776,
+          "mean_action_gap": 1.4126098834867642
+        },
+        {
+          "steps": 1000000,
+          "value_start": 22.87514846649549,
+          "start_gap": 3.4076737074778194,
+          "max_state_gap": 140.15174383441203,
+          "exact_capped_return": 22.875148557326405,
+          "exact_success_500": 0.9999998559825023,
+          "optimal_actions_fraction": 0.6011396011396012,
+          "mean_action_gap": 0.4845557239605548
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 2,
+      "metrics": {
+        "value_start": 23.632940253415438,
+        "start_gap": 2.6498819205578705,
+        "max_state_gap": 100.4981556005008,
+        "exact_capped_return": 23.63294025479174,
+        "exact_success_500": 0.9999999882961648,
+        "optimal_actions_fraction": 0.6068376068376068,
+        "mean_action_gap": 0.4550663335844823,
+        "seconds": 7.92009100000007,
+        "episodes": 14905,
+        "training_goals": 14732,
+        "training_timeouts": 173,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.326775297885792,
+          "mean_steps": 49.247,
+          "mean_success_steps": 49.247
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 11,
+        "behavior_value_eps_0.1": 16.61280472424987,
+        "behavior_value_eps_0.02": 22.32394718971293
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99995231331334,
+          "start_gap": 126.28277448728664,
+          "max_state_gap": 180.82001234246786,
+          "exact_capped_return": -99.34293536016963,
+          "exact_success_500": 7.0395114685583275e-06,
+          "optimal_actions_fraction": 0.2621082621082621,
+          "mean_action_gap": 1.5382151374733533
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99981927636345,
+          "start_gap": 126.28264145033677,
+          "max_state_gap": 171.33578262716014,
+          "exact_capped_return": -99.34284127404177,
+          "exact_success_500": 3.206062459010065e-05,
+          "optimal_actions_fraction": 0.2678062678062678,
+          "mean_action_gap": 1.4574063320137536
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.632940253415438,
+          "start_gap": 2.6498819205578705,
+          "max_state_gap": 100.4981556005008,
+          "exact_capped_return": 23.63294025479174,
+          "exact_success_500": 0.9999999882961648,
+          "optimal_actions_fraction": 0.6068376068376068,
+          "mean_action_gap": 0.4550663335844823
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 3,
+      "metrics": {
+        "value_start": 23.698141171482796,
+        "start_gap": 2.5846810024905125,
+        "max_state_gap": 94.69118827050332,
+        "exact_capped_return": 23.698141171858282,
+        "exact_success_500": 0.999999997943821,
+        "optimal_actions_fraction": 0.6381766381766382,
+        "mean_action_gap": 0.362174489173565,
+        "seconds": 8.07396708300007,
+        "episodes": 14981,
+        "training_goals": 14819,
+        "training_timeouts": 162,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.656554342601854,
+          "mean_steps": 48.98,
+          "mean_success_steps": 48.98
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 2,
+        "behavior_value_eps_0.1": 16.630096358212608,
+        "behavior_value_eps_0.02": 22.380208003981686
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999910205781,
+          "start_gap": 126.28282127603111,
+          "max_state_gap": 181.00820369140143,
+          "exact_capped_return": -99.34295147015474,
+          "exact_success_500": 1.080766251438899e-07,
+          "optimal_actions_fraction": 0.25071225071225073,
+          "mean_action_gap": 1.4813236716854745
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99999999156026,
+          "start_gap": 126.28282216553356,
+          "max_state_gap": 173.26785624352735,
+          "exact_capped_return": -99.3429516919212,
+          "exact_success_500": 1.2821939283407423e-09,
+          "optimal_actions_fraction": 0.25925925925925924,
+          "mean_action_gap": 1.5226682266018103
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.698141171482796,
+          "start_gap": 2.5846810024905125,
+          "max_state_gap": 94.69118827050332,
+          "exact_capped_return": 23.698141171858282,
+          "exact_success_500": 0.999999997943821,
+          "optimal_actions_fraction": 0.6381766381766382,
+          "mean_action_gap": 0.362174489173565
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 4,
+      "metrics": {
+        "value_start": 22.37810686973472,
+        "start_gap": 3.9047153042385894,
+        "max_state_gap": 97.67471654954639,
+        "exact_capped_return": 22.37810686975897,
+        "exact_success_500": 0.9999999998619462,
+        "optimal_actions_fraction": 0.5925925925925926,
+        "mean_action_gap": 0.43266403454736535,
+        "seconds": 8.090893874999892,
+        "episodes": 14718,
+        "training_goals": 14540,
+        "training_timeouts": 178,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 22.486925103686925,
+          "mean_steps": 49.934,
+          "mean_success_steps": 49.934
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 4,
+        "behavior_value_eps_0.1": 15.008339874160919,
+        "behavior_value_eps_0.02": 21.00496076122394
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99902144832775,
+          "start_gap": 126.28184362230107,
+          "max_state_gap": 178.99070724194655,
+          "exact_capped_return": -99.34211646511176,
+          "exact_success_500": 0.0001097244992049385,
+          "optimal_actions_fraction": 0.2706552706552707,
+          "mean_action_gap": 1.4993518542345559
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99999999980167,
+          "start_gap": 126.28282217377497,
+          "max_state_gap": 183.99585840484139,
+          "exact_capped_return": -99.34295169571242,
+          "exact_success_500": 2.3004556121226968e-11,
+          "optimal_actions_fraction": 0.2678062678062678,
+          "mean_action_gap": 1.5214851750563767
+        },
+        {
+          "steps": 1000000,
+          "value_start": 22.37810686973472,
+          "start_gap": 3.9047153042385894,
+          "max_state_gap": 97.67471654954639,
+          "exact_capped_return": 22.37810686975897,
+          "exact_success_500": 0.9999999998619462,
+          "optimal_actions_fraction": 0.5925925925925926,
+          "mean_action_gap": 0.43266403454736535
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 5,
+      "metrics": {
+        "value_start": 21.96360333563613,
+        "start_gap": 4.319218838337179,
+        "max_state_gap": 70.62772265900891,
+        "exact_capped_return": 21.96360333549365,
+        "exact_success_500": 0.9999999989852985,
+        "optimal_actions_fraction": 0.5954415954415955,
+        "mean_action_gap": 0.4575726176515679,
+        "seconds": 8.050488249999944,
+        "episodes": 14777,
+        "training_goals": 14598,
+        "training_timeouts": 179,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 21.705461443766048,
+          "mean_steps": 50.577,
+          "mean_success_steps": 50.577
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 1,
+        "behavior_value_eps_0.1": 14.580790520173391,
+        "behavior_value_eps_0.02": 20.586030335237897
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999870880296,
+          "start_gap": 126.28282088277626,
+          "max_state_gap": 185.63502643618267,
+          "exact_capped_return": -99.34295107224258,
+          "exact_success_500": 2.1677343841022156e-07,
+          "optimal_actions_fraction": 0.2535612535612536,
+          "mean_action_gap": 1.520096395258301
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99757433393195,
+          "start_gap": 126.28039650790527,
+          "max_state_gap": 177.74441306682075,
+          "exact_capped_return": -99.34158275285091,
+          "exact_success_500": 0.0004245076420757478,
+          "optimal_actions_fraction": 0.2849002849002849,
+          "mean_action_gap": 1.3724879613567913
+        },
+        {
+          "steps": 1000000,
+          "value_start": 21.96360333563613,
+          "start_gap": 4.319218838337179,
+          "max_state_gap": 70.62772265900891,
+          "exact_capped_return": 21.96360333549365,
+          "exact_success_500": 0.9999999989852985,
+          "optimal_actions_fraction": 0.5954415954415955,
+          "mean_action_gap": 0.4575726176515679
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 6,
+      "metrics": {
+        "value_start": 22.85742073425058,
+        "start_gap": 3.4254014397227266,
+        "max_state_gap": 82.6392455067772,
+        "exact_capped_return": 22.857420734246592,
+        "exact_success_500": 0.9999999999878402,
+        "optimal_actions_fraction": 0.6210826210826211,
+        "mean_action_gap": 0.4272614398612927,
+        "seconds": 7.936690582999972,
+        "episodes": 15072,
+        "training_goals": 14915,
+        "training_timeouts": 157,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 22.761172270558223,
+          "mean_steps": 49.727,
+          "mean_success_steps": 49.727
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 1,
+        "behavior_value_eps_0.1": 15.610850870954001,
+        "behavior_value_eps_0.02": 21.50701213927559
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999999994071,
+          "start_gap": 126.28282217391401,
+          "max_state_gap": 183.50144696682085,
+          "exact_capped_return": -99.34295169573615,
+          "exact_success_500": 8.686075397068825e-12,
+          "optimal_actions_fraction": 0.245014245014245,
+          "mean_action_gap": 1.6638492168558003
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99953575657553,
+          "start_gap": 126.28235793054884,
+          "max_state_gap": 178.6933879484067,
+          "exact_capped_return": -99.3427117728716,
+          "exact_success_500": 7.998896870016798e-05,
+          "optimal_actions_fraction": 0.2564102564102564,
+          "mean_action_gap": 1.501795880246579
+        },
+        {
+          "steps": 1000000,
+          "value_start": 22.85742073425058,
+          "start_gap": 3.4254014397227266,
+          "max_state_gap": 82.6392455067772,
+          "exact_capped_return": 22.857420734246592,
+          "exact_success_500": 0.9999999999878402,
+          "optimal_actions_fraction": 0.6210826210826211,
+          "mean_action_gap": 0.4272614398612927
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 7,
+      "metrics": {
+        "value_start": 21.007946009219836,
+        "start_gap": 5.274876164753472,
+        "max_state_gap": 110.3691689913795,
+        "exact_capped_return": 21.007946009455686,
+        "exact_success_500": 0.9999999989460906,
+        "optimal_actions_fraction": 0.6153846153846154,
+        "mean_action_gap": 0.4322538325159261,
+        "seconds": 8.138020833999917,
+        "episodes": 14396,
+        "training_goals": 14219,
+        "training_timeouts": 177,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 21.408156991897798,
+          "mean_steps": 50.83,
+          "mean_success_steps": 50.83
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 6,
+        "behavior_value_eps_0.1": 13.409443134393886,
+        "behavior_value_eps_0.02": 19.58850393848125
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999999467641,
+          "start_gap": 126.28282216864972,
+          "max_state_gap": 182.69963967932688,
+          "exact_capped_return": -99.34295169523773,
+          "exact_success_500": 2.891133601701248e-10,
+          "optimal_actions_fraction": 0.25071225071225073,
+          "mean_action_gap": 1.49720339082504
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99999999528939,
+          "start_gap": 126.28282216926269,
+          "max_state_gap": 180.64101822112548,
+          "exact_capped_return": -99.34295169509119,
+          "exact_success_500": 2.698462432132472e-10,
+          "optimal_actions_fraction": 0.27350427350427353,
+          "mean_action_gap": 1.5326752107523463
+        },
+        {
+          "steps": 1000000,
+          "value_start": 21.007946009219836,
+          "start_gap": 5.274876164753472,
+          "max_state_gap": 110.3691689913795,
+          "exact_capped_return": 21.007946009455686,
+          "exact_success_500": 0.9999999989460906,
+          "optimal_actions_fraction": 0.6153846153846154,
+          "mean_action_gap": 0.4322538325159261
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 8,
+      "metrics": {
+        "value_start": 23.25056697728753,
+        "start_gap": 3.032255196685778,
+        "max_state_gap": 130.48637577280738,
+        "exact_capped_return": 23.25056698174581,
+        "exact_success_500": 0.9999999824728232,
+        "optimal_actions_fraction": 0.6267806267806267,
+        "mean_action_gap": 0.4747870193608769,
+        "seconds": 7.888027291999947,
+        "episodes": 14665,
+        "training_goals": 14490,
+        "training_timeouts": 175,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.23763852035092,
+          "mean_steps": 49.319,
+          "mean_success_steps": 49.319
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 1,
+        "behavior_value_eps_0.1": 16.11377121872602,
+        "behavior_value_eps_0.02": 21.920588204258816
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -100.00000000000031,
+          "start_gap": 126.28282217397361,
+          "max_state_gap": 176.23711845434053,
+          "exact_capped_return": -99.34295169575901,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.2336182336182336,
+          "mean_action_gap": 1.5521164605059252
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99998680104926,
+          "start_gap": 126.28280897502256,
+          "max_state_gap": 178.3640140395857,
+          "exact_capped_return": -99.34294611281138,
+          "exact_success_500": 1.9952611803880427e-06,
+          "optimal_actions_fraction": 0.2849002849002849,
+          "mean_action_gap": 1.4525589633772302
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.25056697728753,
+          "start_gap": 3.032255196685778,
+          "max_state_gap": 130.48637577280738,
+          "exact_capped_return": 23.25056698174581,
+          "exact_success_500": 0.9999999824728232,
+          "optimal_actions_fraction": 0.6267806267806267,
+          "mean_action_gap": 0.4747870193608769
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "seed": 9,
+      "metrics": {
+        "value_start": 23.470210517199238,
+        "start_gap": 2.81261165677407,
+        "max_state_gap": 139.54389486161864,
+        "exact_capped_return": 23.470210606596375,
+        "exact_success_500": 0.9999990987440108,
+        "optimal_actions_fraction": 0.603988603988604,
+        "mean_action_gap": 0.5051791102060299,
+        "seconds": 7.934973624999998,
+        "episodes": 14934,
+        "training_goals": 14755,
+        "training_timeouts": 179,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.61274064004619,
+          "mean_steps": 49.011,
+          "mean_success_steps": 49.011
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 3,
+        "behavior_value_eps_0.1": 16.37954888361387,
+        "behavior_value_eps_0.02": 22.148492405758212
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9999999998223,
+          "start_gap": 126.28282217379561,
+          "max_state_gap": 193.5361284282751,
+          "exact_capped_return": -99.34295169573801,
+          "exact_success_500": 1.2143175578654115e-11,
+          "optimal_actions_fraction": 0.23931623931623933,
+          "mean_action_gap": 1.5103652529825755
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99998349103127,
+          "start_gap": 126.28280566500459,
+          "max_state_gap": 173.3914372076726,
+          "exact_capped_return": -99.34294820830918,
+          "exact_success_500": 1.771422344944178e-06,
+          "optimal_actions_fraction": 0.32763532763532766,
+          "mean_action_gap": 1.3453851414403402
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.470210517199238,
+          "start_gap": 2.81261165677407,
+          "max_state_gap": 139.54389486161864,
+          "exact_capped_return": 23.470210606596375,
+          "exact_success_500": 0.9999990987440108,
+          "optimal_actions_fraction": 0.603988603988604,
+          "mean_action_gap": 0.5051791102060299
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 0,
+      "metrics": {
+        "value_start": 23.530092796549457,
+        "start_gap": 2.752729377423851,
+        "max_state_gap": 136.60061886902912,
+        "exact_capped_return": 23.530092807920756,
+        "exact_success_500": 0.9999999623852338,
+        "optimal_actions_fraction": 0.6125356125356125,
+        "mean_action_gap": 0.4579415336702896,
+        "seconds": 8.727207417000045,
+        "episodes": 15355,
+        "training_goals": 15182,
+        "training_timeouts": 173,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.450760921825083,
+          "mean_steps": 49.14,
+          "mean_success_steps": 49.14
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 25,
+        "behavior_value_eps_0.1": 16.546618704846598,
+        "behavior_value_eps_0.02": 22.22624068990522
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99997134005976,
+          "start_gap": 126.28279351403307,
+          "max_state_gap": 174.691188556881,
+          "exact_capped_return": -99.34293212475353,
+          "exact_success_500": 4.782734170902843e-06,
+          "optimal_actions_fraction": 0.245014245014245,
+          "mean_action_gap": 1.5147192047229807
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.9941854747252,
+          "start_gap": 126.27700764869851,
+          "max_state_gap": 175.72003609909797,
+          "exact_capped_return": -99.33905111836953,
+          "exact_success_500": 0.0009669387533011962,
+          "optimal_actions_fraction": 0.27635327635327633,
+          "mean_action_gap": 1.4712995173122667
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.530092796549457,
+          "start_gap": 2.752729377423851,
+          "max_state_gap": 136.60061886902912,
+          "exact_capped_return": 23.530092807920756,
+          "exact_success_500": 0.9999999623852338,
+          "optimal_actions_fraction": 0.6125356125356125,
+          "mean_action_gap": 0.4579415336702896
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 1,
+      "metrics": {
+        "value_start": 24.231646611274087,
+        "start_gap": 2.051175562699221,
+        "max_state_gap": 118.9286312532096,
+        "exact_capped_return": 24.23164663736824,
+        "exact_success_500": 0.9999998802627459,
+        "optimal_actions_fraction": 0.6068376068376068,
+        "mean_action_gap": 0.4772436458797315,
+        "seconds": 8.780614000000014,
+        "episodes": 15277,
+        "training_goals": 15104,
+        "training_timeouts": 173,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.30622216024947,
+          "mean_steps": 48.448,
+          "mean_success_steps": 48.448
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 22,
+        "behavior_value_eps_0.1": 17.330465651538837,
+        "behavior_value_eps_0.02": 22.945676255202542
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9995536098839,
+          "start_gap": 126.28237578385722,
+          "max_state_gap": 171.23931841631548,
+          "exact_capped_return": -99.34272943693533,
+          "exact_success_500": 7.231007015023473e-05,
+          "optimal_actions_fraction": 0.26495726495726496,
+          "mean_action_gap": 1.4850665956322044
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99994840619351,
+          "start_gap": 126.28277058016681,
+          "max_state_gap": 191.16022395754428,
+          "exact_capped_return": -99.34291614584053,
+          "exact_success_500": 8.184072402829554e-06,
+          "optimal_actions_fraction": 0.2962962962962963,
+          "mean_action_gap": 1.4581297214705766
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.231646611274087,
+          "start_gap": 2.051175562699221,
+          "max_state_gap": 118.9286312532096,
+          "exact_capped_return": 24.23164663736824,
+          "exact_success_500": 0.9999998802627459,
+          "optimal_actions_fraction": 0.6068376068376068,
+          "mean_action_gap": 0.4772436458797315
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 2,
+      "metrics": {
+        "value_start": 24.57185607819992,
+        "start_gap": 1.7109660957733865,
+        "max_state_gap": 120.91377937427903,
+        "exact_capped_return": 24.571856223371242,
+        "exact_success_500": 0.9999996168687799,
+        "optimal_actions_fraction": 0.6381766381766382,
+        "mean_action_gap": 0.46001251520398906,
+        "seconds": 8.6679458750001,
+        "episodes": 15194,
+        "training_goals": 15018,
+        "training_timeouts": 176,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.63124501900161,
+          "mean_steps": 48.181,
+          "mean_success_steps": 48.181
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 28,
+        "behavior_value_eps_0.1": 17.631614501050827,
+        "behavior_value_eps_0.02": 23.28117337309015
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999997577068,
+          "start_gap": 126.28282214974399,
+          "max_state_gap": 196.39271609205952,
+          "exact_capped_return": -99.34295168176612,
+          "exact_success_500": 3.5510867090399932e-09,
+          "optimal_actions_fraction": 0.2564102564102564,
+          "mean_action_gap": 1.6149407350415725
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99511648030207,
+          "start_gap": 126.27793865427537,
+          "max_state_gap": 175.82133849153593,
+          "exact_capped_return": -99.33852204978369,
+          "exact_success_500": 0.0004359685178057814,
+          "optimal_actions_fraction": 0.3333333333333333,
+          "mean_action_gap": 1.2928101283919275
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.57185607819992,
+          "start_gap": 1.7109660957733865,
+          "max_state_gap": 120.91377937427903,
+          "exact_capped_return": 24.571856223371242,
+          "exact_success_500": 0.9999996168687799,
+          "optimal_actions_fraction": 0.6381766381766382,
+          "mean_action_gap": 0.46001251520398906
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 3,
+      "metrics": {
+        "value_start": 23.706968631981894,
+        "start_gap": 2.575853541991414,
+        "max_state_gap": 108.11281931639098,
+        "exact_capped_return": 23.706968633013872,
+        "exact_success_500": 0.9999999897088605,
+        "optimal_actions_fraction": 0.5555555555555556,
+        "mean_action_gap": 0.5451539186688154,
+        "seconds": 8.658950542000184,
+        "episodes": 15348,
+        "training_goals": 15177,
+        "training_timeouts": 171,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.66709676133805,
+          "mean_steps": 48.966,
+          "mean_success_steps": 48.966
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 25,
+        "behavior_value_eps_0.1": 16.693658571642324,
+        "behavior_value_eps_0.02": 22.398675476553123
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999973035095,
+          "start_gap": 126.28282190432427,
+          "max_state_gap": 183.86557180254147,
+          "exact_capped_return": -99.3429515596186,
+          "exact_success_500": 4.395901415495748e-08,
+          "optimal_actions_fraction": 0.23646723646723647,
+          "mean_action_gap": 1.5109453266415906
+        },
+        {
+          "steps": 50000,
+          "value_start": -100.0000000000004,
+          "start_gap": 126.2828221739737,
+          "max_state_gap": 180.8405836902046,
+          "exact_capped_return": -99.34295169575906,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.24216524216524216,
+          "mean_action_gap": 1.5654809334628277
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.706968631981894,
+          "start_gap": 2.575853541991414,
+          "max_state_gap": 108.11281931639098,
+          "exact_capped_return": 23.706968633013872,
+          "exact_success_500": 0.9999999897088605,
+          "optimal_actions_fraction": 0.5555555555555556,
+          "mean_action_gap": 0.5451539186688154
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 4,
+      "metrics": {
+        "value_start": 23.134891750044048,
+        "start_gap": 3.1479304239292603,
+        "max_state_gap": 79.92181327439803,
+        "exact_capped_return": 23.13489174968499,
+        "exact_success_500": 0.9999999968866087,
+        "optimal_actions_fraction": 0.5868945868945868,
+        "mean_action_gap": 0.4421207509144356,
+        "seconds": 8.797859125000059,
+        "episodes": 15039,
+        "training_goals": 14870,
+        "training_timeouts": 169,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 22.924429121873967,
+          "mean_steps": 49.581,
+          "mean_success_steps": 49.581
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 2,
+        "behavior_value_eps_0.1": 15.88835605260609,
+        "behavior_value_eps_0.02": 21.784503836120095
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -100.00000000000033,
+          "start_gap": 126.28282217397364,
+          "max_state_gap": 168.96991108927085,
+          "exact_capped_return": -99.34295169575906,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.26495726495726496,
+          "mean_action_gap": 1.4392074376602173
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.9867742246547,
+          "start_gap": 126.26959639862801,
+          "max_state_gap": 179.6883773861952,
+          "exact_capped_return": -99.33280139546835,
+          "exact_success_500": 0.0018497457712317745,
+          "optimal_actions_fraction": 0.2792022792022792,
+          "mean_action_gap": 1.393874648557817
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.134891750044048,
+          "start_gap": 3.1479304239292603,
+          "max_state_gap": 79.92181327439803,
+          "exact_capped_return": 23.13489174968499,
+          "exact_success_500": 0.9999999968866087,
+          "optimal_actions_fraction": 0.5868945868945868,
+          "mean_action_gap": 0.4421207509144356
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 5,
+      "metrics": {
+        "value_start": 24.349586896002663,
+        "start_gap": 1.9332352779706454,
+        "max_state_gap": 115.87245696589926,
+        "exact_capped_return": 24.349586896195827,
+        "exact_success_500": 0.9999999995294886,
+        "optimal_actions_fraction": 0.6609686609686609,
+        "mean_action_gap": 0.3454631942056653,
+        "seconds": 8.692683708000004,
+        "episodes": 15199,
+        "training_goals": 15038,
+        "training_timeouts": 161,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.380772064868214,
+          "mean_steps": 48.395,
+          "mean_success_steps": 48.395
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 2,
+        "behavior_value_eps_0.1": 17.502676841814097,
+        "behavior_value_eps_0.02": 23.072894195111445
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999999169357,
+          "start_gap": 126.28282216566689,
+          "max_state_gap": 182.87339166762678,
+          "exact_capped_return": -99.34295168955356,
+          "exact_success_500": 1.3644935741852482e-09,
+          "optimal_actions_fraction": 0.26495726495726496,
+          "mean_action_gap": 1.4537851316491956
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99999999997345,
+          "start_gap": 126.28282217394676,
+          "max_state_gap": 178.8096361195021,
+          "exact_capped_return": -99.34295169573987,
+          "exact_success_500": 4.474109244075678e-12,
+          "optimal_actions_fraction": 0.2535612535612536,
+          "mean_action_gap": 1.5374460772042853
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.349586896002663,
+          "start_gap": 1.9332352779706454,
+          "max_state_gap": 115.87245696589926,
+          "exact_capped_return": 24.349586896195827,
+          "exact_success_500": 0.9999999995294886,
+          "optimal_actions_fraction": 0.6609686609686609,
+          "mean_action_gap": 0.3454631942056653
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 6,
+      "metrics": {
+        "value_start": 22.951874576577563,
+        "start_gap": 3.3309475973957454,
+        "max_state_gap": 133.81555050922077,
+        "exact_capped_return": 22.951875606814887,
+        "exact_success_500": 0.999997999458418,
+        "optimal_actions_fraction": 0.5698005698005698,
+        "mean_action_gap": 0.5438612217605882,
+        "seconds": 8.70464816599997,
+        "episodes": 15103,
+        "training_goals": 14923,
+        "training_timeouts": 180,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 22.993921898623054,
+          "mean_steps": 49.52,
+          "mean_success_steps": 49.52
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 1,
+        "behavior_value_eps_0.1": 15.705573075085121,
+        "behavior_value_eps_0.02": 21.602874770331187
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -100.00000000000028,
+          "start_gap": 126.28282217397359,
+          "max_state_gap": 195.15440681664617,
+          "exact_capped_return": -99.34295169575901,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.23076923076923078,
+          "mean_action_gap": 1.5726628753512575
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.92748811273572,
+          "start_gap": 126.21031028670902,
+          "max_state_gap": 173.2600157726238,
+          "exact_capped_return": -99.28674183677911,
+          "exact_success_500": 0.011719189319948487,
+          "optimal_actions_fraction": 0.30484330484330485,
+          "mean_action_gap": 1.4302645013917032
+        },
+        {
+          "steps": 1000000,
+          "value_start": 22.951874576577563,
+          "start_gap": 3.3309475973957454,
+          "max_state_gap": 133.81555050922077,
+          "exact_capped_return": 22.951875606814887,
+          "exact_success_500": 0.999997999458418,
+          "optimal_actions_fraction": 0.5698005698005698,
+          "mean_action_gap": 0.5438612217605882
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 7,
+      "metrics": {
+        "value_start": 24.15534030498919,
+        "start_gap": 2.1274818689841197,
+        "max_state_gap": 126.62495476843795,
+        "exact_capped_return": 24.155341279026047,
+        "exact_success_500": 0.9999980243850424,
+        "optimal_actions_fraction": 0.6239316239316239,
+        "mean_action_gap": 0.46601606098848275,
+        "seconds": 8.715553833000058,
+        "episodes": 15144,
+        "training_goals": 14968,
+        "training_timeouts": 176,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.11240850225815,
+          "mean_steps": 48.602,
+          "mean_success_steps": 48.602
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 11,
+        "behavior_value_eps_0.1": 17.214832041296546,
+        "behavior_value_eps_0.02": 22.862834957970634
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9999999201996,
+          "start_gap": 126.2828220941729,
+          "max_state_gap": 193.28338370687,
+          "exact_capped_return": -99.34295165628598,
+          "exact_success_500": 1.3173089281164775e-08,
+          "optimal_actions_fraction": 0.25071225071225073,
+          "mean_action_gap": 1.5504988458643918
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99819081134615,
+          "start_gap": 126.28101298531945,
+          "max_state_gap": 177.77784618896828,
+          "exact_capped_return": -99.34177677462901,
+          "exact_success_500": 0.00028063792412814904,
+          "optimal_actions_fraction": 0.28774928774928776,
+          "mean_action_gap": 1.4126888435427978
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.15534030498919,
+          "start_gap": 2.1274818689841197,
+          "max_state_gap": 126.62495476843795,
+          "exact_capped_return": 24.155341279026047,
+          "exact_success_500": 0.9999980243850424,
+          "optimal_actions_fraction": 0.6239316239316239,
+          "mean_action_gap": 0.46601606098848275
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 8,
+      "metrics": {
+        "value_start": 15.882962976434625,
+        "start_gap": 10.399859197538683,
+        "max_state_gap": 143.90315977350247,
+        "exact_capped_return": 15.88302610293659,
+        "exact_success_500": 0.9998912987198907,
+        "optimal_actions_fraction": 0.6153846153846154,
+        "mean_action_gap": 0.516184494650409,
+        "seconds": 8.755464958999937,
+        "episodes": 15229,
+        "training_goals": 15067,
+        "training_timeouts": 162,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 15.438505549477473,
+          "mean_steps": 56.311,
+          "mean_success_steps": 56.311
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 16,
+        "behavior_value_eps_0.1": 11.452370259166523,
+        "behavior_value_eps_0.02": 15.232813867293938
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.37095888999416,
+          "start_gap": 125.65378106396747,
+          "max_state_gap": 162.50826728679255,
+          "exact_capped_return": -98.76054316685624,
+          "exact_success_500": 0.04538986727304185,
+          "optimal_actions_fraction": 0.3475783475783476,
+          "mean_action_gap": 1.2634300353267238
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99996615414359,
+          "start_gap": 126.28278832811691,
+          "max_state_gap": 185.36557538264924,
+          "exact_capped_return": -99.34293155051616,
+          "exact_success_500": 5.536312144346385e-06,
+          "optimal_actions_fraction": 0.3076923076923077,
+          "mean_action_gap": 1.3389940310270405
+        },
+        {
+          "steps": 1000000,
+          "value_start": 15.882962976434625,
+          "start_gap": 10.399859197538683,
+          "max_state_gap": 143.90315977350247,
+          "exact_capped_return": 15.88302610293659,
+          "exact_success_500": 0.9998912987198907,
+          "optimal_actions_fraction": 0.6153846153846154,
+          "mean_action_gap": 0.516184494650409
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "seed": 9,
+      "metrics": {
+        "value_start": 22.96658585389269,
+        "start_gap": 3.3162363200806197,
+        "max_state_gap": 139.1223291937321,
+        "exact_capped_return": 22.96658592669743,
+        "exact_success_500": 0.9999998830937427,
+        "optimal_actions_fraction": 0.6153846153846154,
+        "mean_action_gap": 0.47644381523811163,
+        "seconds": 8.698821082999984,
+        "episodes": 15366,
+        "training_goals": 15208,
+        "training_timeouts": 158,
+        "final_epsilon": 0.1,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 22.957067637252877,
+          "mean_steps": 49.552,
+          "mean_success_steps": 49.552
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 2,
+        "behavior_value_eps_0.1": 15.84344510843858,
+        "behavior_value_eps_0.02": 21.638082483197667
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999974725498,
+          "start_gap": 126.28282192122828,
+          "max_state_gap": 192.783329521265,
+          "exact_capped_return": -99.34295151901279,
+          "exact_success_500": 4.037041021393875e-08,
+          "optimal_actions_fraction": 0.245014245014245,
+          "mean_action_gap": 1.591955350286405
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.96002465932123,
+          "start_gap": 126.24284683329455,
+          "max_state_gap": 163.6238762667943,
+          "exact_capped_return": -99.3092300745429,
+          "exact_success_500": 0.004985170064898886,
+          "optimal_actions_fraction": 0.3076923076923077,
+          "mean_action_gap": 1.3446104926057887
+        },
+        {
+          "steps": 1000000,
+          "value_start": 22.96658585389269,
+          "start_gap": 3.3162363200806197,
+          "max_state_gap": 139.1223291937321,
+          "exact_capped_return": 22.96658592669743,
+          "exact_success_500": 0.9999998830937427,
+          "optimal_actions_fraction": 0.6153846153846154,
+          "mean_action_gap": 0.47644381523811163
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 0,
+      "metrics": {
+        "value_start": 24.819913102508124,
+        "start_gap": 1.4629090714651838,
+        "max_state_gap": 58.96580852670337,
+        "exact_capped_return": 24.819913102504305,
+        "exact_success_500": 0.9999999999802284,
+        "optimal_actions_fraction": 0.7777777777777778,
+        "mean_action_gap": 0.18055389807402672,
+        "seconds": 11.059700750000047,
+        "episodes": 10913,
+        "training_goals": 10489,
+        "training_timeouts": 424,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.843603124206428,
+          "mean_steps": 48.01,
+          "mean_success_steps": 48.01
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 42,
+        "behavior_value_eps_0.1": 18.26781380958044,
+        "behavior_value_eps_0.02": 23.593723323978242
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.98711672670838,
+          "start_gap": 126.2699389006817,
+          "max_state_gap": 173.39488431217006,
+          "exact_capped_return": -99.33063464431852,
+          "exact_success_500": 0.0006478380388642361,
+          "optimal_actions_fraction": 0.45014245014245013,
+          "mean_action_gap": 0.9787824900896605
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.94991591819112,
+          "start_gap": 126.23273809216442,
+          "max_state_gap": 172.98748622901076,
+          "exact_capped_return": -99.30428475044037,
+          "exact_success_500": 0.006964733458788664,
+          "optimal_actions_fraction": 0.33618233618233617,
+          "mean_action_gap": 1.2630350347224581
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.819913102508124,
+          "start_gap": 1.4629090714651838,
+          "max_state_gap": 58.96580852670337,
+          "exact_capped_return": 24.819913102504305,
+          "exact_success_500": 0.9999999999802284,
+          "optimal_actions_fraction": 0.7777777777777778,
+          "mean_action_gap": 0.18055389807402672
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 1,
+      "metrics": {
+        "value_start": 24.408855805636584,
+        "start_gap": 1.873966368336724,
+        "max_state_gap": 128.52823167729395,
+        "exact_capped_return": 24.408861564778388,
+        "exact_success_500": 0.9999868591421014,
+        "optimal_actions_fraction": 0.7492877492877493,
+        "mean_action_gap": 0.162419350788272,
+        "seconds": 8.795928292000099,
+        "episodes": 10778,
+        "training_goals": 10371,
+        "training_timeouts": 407,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.414774168064316,
+          "mean_steps": 48.36,
+          "mean_success_steps": 48.36
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 29,
+        "behavior_value_eps_0.1": 17.592612564309157,
+        "behavior_value_eps_0.02": 23.13785230249565
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99977135566958,
+          "start_gap": 126.2825935296429,
+          "max_state_gap": 175.85732889589576,
+          "exact_capped_return": -99.34279764286326,
+          "exact_success_500": 3.731904185799457e-05,
+          "optimal_actions_fraction": 0.24786324786324787,
+          "mean_action_gap": 1.4864241209405529
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.25019747572107,
+          "start_gap": 125.53301964969438,
+          "max_state_gap": 179.15457558194495,
+          "exact_capped_return": -98.63766350801538,
+          "exact_success_500": 0.051802912280608716,
+          "optimal_actions_fraction": 0.35327635327635326,
+          "mean_action_gap": 1.1867705646870224
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.408855805636584,
+          "start_gap": 1.873966368336724,
+          "max_state_gap": 128.52823167729395,
+          "exact_capped_return": 24.408861564778388,
+          "exact_success_500": 0.9999868591421014,
+          "optimal_actions_fraction": 0.7492877492877493,
+          "mean_action_gap": 0.162419350788272
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 2,
+      "metrics": {
+        "value_start": 20.622065585364084,
+        "start_gap": 5.660756588609225,
+        "max_state_gap": 77.4341470960868,
+        "exact_capped_return": 20.622065585364663,
+        "exact_success_500": 0.9999999999772988,
+        "optimal_actions_fraction": 0.7663817663817664,
+        "mean_action_gap": 0.15404146206004668,
+        "seconds": 8.353395042000102,
+        "episodes": 10577,
+        "training_goals": 10148,
+        "training_timeouts": 429,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 20.592279126647036,
+          "mean_steps": 51.506,
+          "mean_success_steps": 51.506
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 36,
+        "behavior_value_eps_0.1": 13.778605057382638,
+        "behavior_value_eps_0.02": 19.339327438289327
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9999667366696,
+          "start_gap": 126.28278891064292,
+          "max_state_gap": 178.6933879485701,
+          "exact_capped_return": -99.3429314113211,
+          "exact_success_500": 5.8427944871711195e-06,
+          "optimal_actions_fraction": 0.32193732193732194,
+          "mean_action_gap": 1.3144057162300813
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99999998193279,
+          "start_gap": 126.2828221559061,
+          "max_state_gap": 185.9981963198755,
+          "exact_capped_return": -99.34295167923919,
+          "exact_success_500": 1.4660773884614012e-09,
+          "optimal_actions_fraction": 0.36752136752136755,
+          "mean_action_gap": 1.2080975354210097
+        },
+        {
+          "steps": 1000000,
+          "value_start": 20.622065585364084,
+          "start_gap": 5.660756588609225,
+          "max_state_gap": 77.4341470960868,
+          "exact_capped_return": 20.622065585364663,
+          "exact_success_500": 0.9999999999772988,
+          "optimal_actions_fraction": 0.7663817663817664,
+          "mean_action_gap": 0.15404146206004668
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 3,
+      "metrics": {
+        "value_start": 24.069537141918897,
+        "start_gap": 2.2132850320544115,
+        "max_state_gap": 92.05677488930714,
+        "exact_capped_return": 24.069537145708086,
+        "exact_success_500": 0.9999999834045806,
+        "optimal_actions_fraction": 0.7492877492877493,
+        "mean_action_gap": 0.18832196889983094,
+        "seconds": 8.64141220800002,
+        "episodes": 10784,
+        "training_goals": 10362,
+        "training_timeouts": 422,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.052323756461213,
+          "mean_steps": 48.661,
+          "mean_success_steps": 48.661
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 57,
+        "behavior_value_eps_0.1": 17.359691373737203,
+        "behavior_value_eps_0.02": 22.81185414051767
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.62874401745587,
+          "start_gap": 125.91156619142919,
+          "max_state_gap": 173.37708010313747,
+          "exact_capped_return": -98.98887211430069,
+          "exact_success_500": 0.02012577326466544,
+          "optimal_actions_fraction": 0.4415954415954416,
+          "mean_action_gap": 1.0330906085305869
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.96978449787828,
+          "start_gap": 126.2526066718516,
+          "max_state_gap": 180.19189904031487,
+          "exact_capped_return": -99.31523375596059,
+          "exact_success_500": 0.002554389665916006,
+          "optimal_actions_fraction": 0.35327635327635326,
+          "mean_action_gap": 1.2663500606096498
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.069537141918897,
+          "start_gap": 2.2132850320544115,
+          "max_state_gap": 92.05677488930714,
+          "exact_capped_return": 24.069537145708086,
+          "exact_success_500": 0.9999999834045806,
+          "optimal_actions_fraction": 0.7492877492877493,
+          "mean_action_gap": 0.18832196889983094
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 4,
+      "metrics": {
+        "value_start": 25.467970481947177,
+        "start_gap": 0.8148516920261315,
+        "max_state_gap": 124.61292036318406,
+        "exact_capped_return": 25.467970486262697,
+        "exact_success_500": 0.9999999903481703,
+        "optimal_actions_fraction": 0.7720797720797721,
+        "mean_action_gap": 0.16204983082849053,
+        "seconds": 8.25816891699992,
+        "episodes": 10849,
+        "training_goals": 10410,
+        "training_timeouts": 439,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 25.77515286097066,
+          "mean_steps": 47.259,
+          "mean_success_steps": 47.259
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 50,
+        "behavior_value_eps_0.1": 18.946105614466198,
+        "behavior_value_eps_0.02": 24.250936285917817
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99920316356211,
+          "start_gap": 126.28202533753543,
+          "max_state_gap": 168.8010851316929,
+          "exact_capped_return": -99.34256124623934,
+          "exact_success_500": 0.00014004246583306792,
+          "optimal_actions_fraction": 0.24786324786324787,
+          "mean_action_gap": 1.458118109768848
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.93565437741258,
+          "start_gap": 126.21847655138589,
+          "max_state_gap": 175.85735056814923,
+          "exact_capped_return": -99.28615218023891,
+          "exact_success_500": 0.006702048151728967,
+          "optimal_actions_fraction": 0.31339031339031337,
+          "mean_action_gap": 1.2089226504814485
+        },
+        {
+          "steps": 1000000,
+          "value_start": 25.467970481947177,
+          "start_gap": 0.8148516920261315,
+          "max_state_gap": 124.61292036318406,
+          "exact_capped_return": 25.467970486262697,
+          "exact_success_500": 0.9999999903481703,
+          "optimal_actions_fraction": 0.7720797720797721,
+          "mean_action_gap": 0.16204983082849053
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 5,
+      "metrics": {
+        "value_start": 24.478072948855267,
+        "start_gap": 1.8047492251180408,
+        "max_state_gap": 65.4992982211376,
+        "exact_capped_return": 24.4780729488419,
+        "exact_success_500": 0.999999999912508,
+        "optimal_actions_fraction": 0.7378917378917379,
+        "mean_action_gap": 0.17059023976918622,
+        "seconds": 8.244638000000123,
+        "episodes": 10815,
+        "training_goals": 10382,
+        "training_timeouts": 433,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.52811084315865,
+          "mean_steps": 48.27,
+          "mean_success_steps": 48.27
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 84,
+        "behavior_value_eps_0.1": 17.697604158659146,
+        "behavior_value_eps_0.02": 23.212851916003952
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -100.00000000000064,
+          "start_gap": 126.28282217397395,
+          "max_state_gap": 168.6462345256948,
+          "exact_capped_return": -99.34295169575906,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.31054131054131057,
+          "mean_action_gap": 1.2662105452361674
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99993121713871,
+          "start_gap": 126.28275339111201,
+          "max_state_gap": 185.26076938196735,
+          "exact_capped_return": -99.34289200688823,
+          "exact_success_500": 7.2846326597696985e-06,
+          "optimal_actions_fraction": 0.2792022792022792,
+          "mean_action_gap": 1.2946014487647606
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.478072948855267,
+          "start_gap": 1.8047492251180408,
+          "max_state_gap": 65.4992982211376,
+          "exact_capped_return": 24.4780729488419,
+          "exact_success_500": 0.999999999912508,
+          "optimal_actions_fraction": 0.7378917378917379,
+          "mean_action_gap": 0.17059023976918622
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 6,
+      "metrics": {
+        "value_start": 24.86941476514305,
+        "start_gap": 1.4134074088302597,
+        "max_state_gap": 129.82014307888656,
+        "exact_capped_return": 24.869414773457805,
+        "exact_success_500": 0.9999999856077555,
+        "optimal_actions_fraction": 0.7293447293447294,
+        "mean_action_gap": 0.23222256542504127,
+        "seconds": 8.36533462500006,
+        "episodes": 10875,
+        "training_goals": 10454,
+        "training_timeouts": 421,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.850473292043514,
+          "mean_steps": 48.003,
+          "mean_success_steps": 48.003
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 39,
+        "behavior_value_eps_0.1": 18.215793063631864,
+        "behavior_value_eps_0.02": 23.625401589001967
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -89.41990411126605,
+          "start_gap": 115.70272628523935,
+          "max_state_gap": 168.34616962053133,
+          "exact_capped_return": -89.29703618670598,
+          "exact_success_500": 0.7171924589113227,
+          "optimal_actions_fraction": 0.33618233618233617,
+          "mean_action_gap": 1.2790520176912783
+        },
+        {
+          "steps": 50000,
+          "value_start": -100.00000000000061,
+          "start_gap": 126.28282217397393,
+          "max_state_gap": 199.19475271553506,
+          "exact_capped_return": -99.34295169575906,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.3561253561253561,
+          "mean_action_gap": 1.286659547629912
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.86941476514305,
+          "start_gap": 1.4134074088302597,
+          "max_state_gap": 129.82014307888656,
+          "exact_capped_return": 24.869414773457805,
+          "exact_success_500": 0.9999999856077555,
+          "optimal_actions_fraction": 0.7293447293447294,
+          "mean_action_gap": 0.23222256542504127
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 7,
+      "metrics": {
+        "value_start": 24.152064853367943,
+        "start_gap": 2.1307573206053654,
+        "max_state_gap": 107.55264987639862,
+        "exact_capped_return": 24.15207506430086,
+        "exact_success_500": 0.9999312248422554,
+        "optimal_actions_fraction": 0.7435897435897436,
+        "mean_action_gap": 0.23518759223312385,
+        "seconds": 8.186026791999893,
+        "episodes": 10727,
+        "training_goals": 10301,
+        "training_timeouts": 426,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.217813342748425,
+          "mean_steps": 48.519,
+          "mean_success_steps": 48.519
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 46,
+        "behavior_value_eps_0.1": 17.48191641286183,
+        "behavior_value_eps_0.02": 22.902572066089192
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.98609272959673,
+          "start_gap": 126.26891490357005,
+          "max_state_gap": 173.37674728401495,
+          "exact_capped_return": -99.33079683207593,
+          "exact_success_500": 0.0015044136944408436,
+          "optimal_actions_fraction": 0.45014245014245013,
+          "mean_action_gap": 0.9357543380324326
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99988212085945,
+          "start_gap": 126.28270429483277,
+          "max_state_gap": 182.97150142202824,
+          "exact_capped_return": -99.34284489099957,
+          "exact_success_500": 8.919366119712298e-06,
+          "optimal_actions_fraction": 0.37037037037037035,
+          "mean_action_gap": 1.2206778709929982
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.152064853367943,
+          "start_gap": 2.1307573206053654,
+          "max_state_gap": 107.55264987639862,
+          "exact_capped_return": 24.15207506430086,
+          "exact_success_500": 0.9999312248422554,
+          "optimal_actions_fraction": 0.7435897435897436,
+          "mean_action_gap": 0.23518759223312385
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 8,
+      "metrics": {
+        "value_start": 25.075051725671617,
+        "start_gap": 1.207770448301691,
+        "max_state_gap": 99.20144041053894,
+        "exact_capped_return": 25.075051725900643,
+        "exact_success_500": 0.9999999991115895,
+        "optimal_actions_fraction": 0.7521367521367521,
+        "mean_action_gap": 0.20480639979241602,
+        "seconds": 8.183018875000016,
+        "episodes": 10853,
+        "training_goals": 10435,
+        "training_timeouts": 418,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 25.313078965394947,
+          "mean_steps": 47.631,
+          "mean_success_steps": 47.631
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 37,
+        "behavior_value_eps_0.1": 18.417627204532135,
+        "behavior_value_eps_0.02": 23.83349822917363
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99991869478336,
+          "start_gap": 126.28274086875666,
+          "max_state_gap": 175.07749532574098,
+          "exact_capped_return": -99.34288855639917,
+          "exact_success_500": 1.1461831561104935e-05,
+          "optimal_actions_fraction": 0.301994301994302,
+          "mean_action_gap": 1.4106538820628756
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.92716393445265,
+          "start_gap": 126.20998610842597,
+          "max_state_gap": 193.90706374798492,
+          "exact_capped_return": -99.27948890878116,
+          "exact_success_500": 0.006463599250151423,
+          "optimal_actions_fraction": 0.3418803418803419,
+          "mean_action_gap": 1.1925113987077904
+        },
+        {
+          "steps": 1000000,
+          "value_start": 25.075051725671617,
+          "start_gap": 1.207770448301691,
+          "max_state_gap": 99.20144041053894,
+          "exact_capped_return": 25.075051725900643,
+          "exact_success_500": 0.9999999991115895,
+          "optimal_actions_fraction": 0.7521367521367521,
+          "mean_action_gap": 0.20480639979241602
+        }
+      ]
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "seed": 9,
+      "metrics": {
+        "value_start": 24.825139565216187,
+        "start_gap": 1.4576826087571213,
+        "max_state_gap": 89.04864999234961,
+        "exact_capped_return": 24.82513956560333,
+        "exact_success_500": 0.9999999956793515,
+        "optimal_actions_fraction": 0.7378917378917379,
+        "mean_action_gap": 0.21485799362842978,
+        "seconds": 8.148605249999946,
+        "episodes": 10926,
+        "training_goals": 10500,
+        "training_timeouts": 426,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.89656927983928,
+          "mean_steps": 47.972,
+          "mean_success_steps": 47.972
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 36,
+        "behavior_value_eps_0.1": 18.20096221976508,
+        "behavior_value_eps_0.02": 23.58754291687583
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.75315932425626,
+          "start_gap": 126.03598149822957,
+          "max_state_gap": 173.39475883744439,
+          "exact_capped_return": -99.1302654975587,
+          "exact_success_500": 0.027534915174236403,
+          "optimal_actions_fraction": 0.31054131054131057,
+          "mean_action_gap": 1.2822505843619791
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99827298741704,
+          "start_gap": 126.28109516139034,
+          "max_state_gap": 190.27794382641446,
+          "exact_capped_return": -99.34150468300405,
+          "exact_success_500": 0.0002136855030552442,
+          "optimal_actions_fraction": 0.33048433048433046,
+          "mean_action_gap": 1.2956991465081116
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.825139565216187,
+          "start_gap": 1.4576826087571213,
+          "max_state_gap": 89.04864999234961,
+          "exact_capped_return": 24.82513956560333,
+          "exact_success_500": 0.9999999956793515,
+          "optimal_actions_fraction": 0.7378917378917379,
+          "mean_action_gap": 0.21485799362842978
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 0,
+      "metrics": {
+        "value_start": 23.427792741447767,
+        "start_gap": 2.8550294325255408,
+        "max_state_gap": 72.31325777319356,
+        "exact_capped_return": 23.427792741447753,
+        "exact_success_500": 0.9999999999999999,
+        "optimal_actions_fraction": 0.6011396011396012,
+        "mean_action_gap": 0.3370557812742255,
+        "seconds": 8.999666790999981,
+        "episodes": 11268,
+        "training_goals": 10924,
+        "training_timeouts": 344,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.607733465445683,
+          "mean_steps": 49.024,
+          "mean_success_steps": 49.024
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 71,
+        "behavior_value_eps_0.1": 16.29346339837805,
+        "behavior_value_eps_0.02": 22.098910896667537
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.95623220935477,
+          "start_gap": 126.23905438332807,
+          "max_state_gap": 173.39488431216847,
+          "exact_capped_return": -99.29986367419444,
+          "exact_success_500": 0.000994164324024484,
+          "optimal_actions_fraction": 0.452991452991453,
+          "mean_action_gap": 0.9861024904811869
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99953151216837,
+          "start_gap": 126.28235368614168,
+          "max_state_gap": 187.74522904310567,
+          "exact_capped_return": -99.34259712399087,
+          "exact_success_500": 6.5739280356904e-05,
+          "optimal_actions_fraction": 0.39886039886039887,
+          "mean_action_gap": 1.1270164189829053
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.427792741447767,
+          "start_gap": 2.8550294325255408,
+          "max_state_gap": 72.31325777319356,
+          "exact_capped_return": 23.427792741447753,
+          "exact_success_500": 0.9999999999999999,
+          "optimal_actions_fraction": 0.6011396011396012,
+          "mean_action_gap": 0.3370557812742255
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 1,
+      "metrics": {
+        "value_start": 23.442991716462295,
+        "start_gap": 2.839830457511013,
+        "max_state_gap": 139.07826869442206,
+        "exact_capped_return": 23.44299171646231,
+        "exact_success_500": 1.0,
+        "optimal_actions_fraction": 0.6695156695156695,
+        "mean_action_gap": 0.3342319055063606,
+        "seconds": 9.065193542000088,
+        "episodes": 11284,
+        "training_goals": 10938,
+        "training_timeouts": 346,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.55417792390241,
+          "mean_steps": 49.058,
+          "mean_success_steps": 49.058
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 68,
+        "behavior_value_eps_0.1": 16.37685924400192,
+        "behavior_value_eps_0.02": 22.126550446099316
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.97952561051858,
+          "start_gap": 126.26234778449188,
+          "max_state_gap": 175.85734247373597,
+          "exact_capped_return": -99.32690365240836,
+          "exact_success_500": 0.003045211921839256,
+          "optimal_actions_fraction": 0.27635327635327633,
+          "mean_action_gap": 1.4539062672483596
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.94393670937478,
+          "start_gap": 126.22675888334808,
+          "max_state_gap": 162.70764648703084,
+          "exact_capped_return": -99.30791827638038,
+          "exact_success_500": 0.009658229348285207,
+          "optimal_actions_fraction": 0.3333333333333333,
+          "mean_action_gap": 1.2490479985180518
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.442991716462295,
+          "start_gap": 2.839830457511013,
+          "max_state_gap": 139.07826869442206,
+          "exact_capped_return": 23.44299171646231,
+          "exact_success_500": 1.0,
+          "optimal_actions_fraction": 0.6695156695156695,
+          "mean_action_gap": 0.3342319055063606
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 2,
+      "metrics": {
+        "value_start": 22.932556962530896,
+        "start_gap": 3.3502652114424123,
+        "max_state_gap": 100.68067528114966,
+        "exact_capped_return": 22.93255696252953,
+        "exact_success_500": 0.999999999993697,
+        "optimal_actions_fraction": 0.6438746438746439,
+        "mean_action_gap": 0.3487306779978959,
+        "seconds": 8.949973709000005,
+        "episodes": 11281,
+        "training_goals": 10932,
+        "training_timeouts": 349,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 22.858099718129836,
+          "mean_steps": 49.629,
+          "mean_success_steps": 49.629
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 70,
+        "behavior_value_eps_0.1": 15.745940268526333,
+        "behavior_value_eps_0.02": 21.591241145935665
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99993026848738,
+          "start_gap": 126.28275244246069,
+          "max_state_gap": 178.69338794857,
+          "exact_capped_return": -99.34289573775675,
+          "exact_success_500": 8.40154056697062e-06,
+          "optimal_actions_fraction": 0.34472934472934474,
+          "mean_action_gap": 1.163505279815925
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99967208586072,
+          "start_gap": 126.28249425983404,
+          "max_state_gap": 183.1921415839853,
+          "exact_capped_return": -99.34269567882201,
+          "exact_success_500": 4.745779171098507e-05,
+          "optimal_actions_fraction": 0.3475783475783476,
+          "mean_action_gap": 1.2425600992083579
+        },
+        {
+          "steps": 1000000,
+          "value_start": 22.932556962530896,
+          "start_gap": 3.3502652114424123,
+          "max_state_gap": 100.68067528114966,
+          "exact_capped_return": 22.93255696252953,
+          "exact_success_500": 0.999999999993697,
+          "optimal_actions_fraction": 0.6438746438746439,
+          "mean_action_gap": 0.3487306779978959
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 3,
+      "metrics": {
+        "value_start": 23.31105991873277,
+        "start_gap": 2.971762255240538,
+        "max_state_gap": 133.3009468340837,
+        "exact_capped_return": 23.311059992466355,
+        "exact_success_500": 0.9999998480998286,
+        "optimal_actions_fraction": 0.6153846153846154,
+        "mean_action_gap": 0.3570008952727097,
+        "seconds": 8.94129887500003,
+        "episodes": 11232,
+        "training_goals": 10878,
+        "training_timeouts": 354,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.247822564548287,
+          "mean_steps": 49.311,
+          "mean_success_steps": 49.311
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 75,
+        "behavior_value_eps_0.1": 16.12041522447704,
+        "behavior_value_eps_0.02": 21.972656809660055
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -98.68745217441813,
+          "start_gap": 124.97027434839143,
+          "max_state_gap": 157.6503344009998,
+          "exact_capped_return": -98.06884204854514,
+          "exact_success_500": 0.04491999914299324,
+          "optimal_actions_fraction": 0.47293447293447294,
+          "mean_action_gap": 0.9277513623584461
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99990519735368,
+          "start_gap": 126.28272737132698,
+          "max_state_gap": 183.93639945669912,
+          "exact_capped_return": -99.34287695592937,
+          "exact_success_500": 1.2640831585138396e-05,
+          "optimal_actions_fraction": 0.3247863247863248,
+          "mean_action_gap": 1.2941621733919733
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.31105991873277,
+          "start_gap": 2.971762255240538,
+          "max_state_gap": 133.3009468340837,
+          "exact_capped_return": 23.311059992466355,
+          "exact_success_500": 0.9999998480998286,
+          "optimal_actions_fraction": 0.6153846153846154,
+          "mean_action_gap": 0.3570008952727097
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 4,
+      "metrics": {
+        "value_start": 24.56192831037826,
+        "start_gap": 1.7208938635950481,
+        "max_state_gap": 53.277399500905474,
+        "exact_capped_return": 24.56192831037829,
+        "exact_success_500": 0.999999999999948,
+        "optimal_actions_fraction": 0.7065527065527065,
+        "mean_action_gap": 0.2675806165135666,
+        "seconds": 9.132455416999846,
+        "episodes": 11553,
+        "training_goals": 11206,
+        "training_timeouts": 347,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.69700274977395,
+          "mean_steps": 48.13,
+          "mean_success_steps": 48.13
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 77,
+        "behavior_value_eps_0.1": 17.76772093156212,
+        "behavior_value_eps_0.02": 23.294021958674307
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.99999955777525,
+          "start_gap": 126.28282173174856,
+          "max_state_gap": 175.84829950764686,
+          "exact_capped_return": -99.34295162022289,
+          "exact_success_500": 4.061160413880921e-08,
+          "optimal_actions_fraction": 0.2621082621082621,
+          "mean_action_gap": 1.4131673694220097
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.96852467458181,
+          "start_gap": 126.25134684855513,
+          "max_state_gap": 175.79943971609418,
+          "exact_capped_return": -99.31661563949805,
+          "exact_success_500": 0.003807026005438604,
+          "optimal_actions_fraction": 0.3561253561253561,
+          "mean_action_gap": 1.2805574222852796
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.56192831037826,
+          "start_gap": 1.7208938635950481,
+          "max_state_gap": 53.277399500905474,
+          "exact_capped_return": 24.56192831037829,
+          "exact_success_500": 0.999999999999948,
+          "optimal_actions_fraction": 0.7065527065527065,
+          "mean_action_gap": 0.2675806165135666
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 5,
+      "metrics": {
+        "value_start": 23.54140234329369,
+        "start_gap": 2.741419830679618,
+        "max_state_gap": 131.78128722312456,
+        "exact_capped_return": 23.541402343241813,
+        "exact_success_500": 0.9999999994367191,
+        "optimal_actions_fraction": 0.6552706552706553,
+        "mean_action_gap": 0.33458819816700974,
+        "seconds": 8.930154540999865,
+        "episodes": 11300,
+        "training_goals": 10950,
+        "training_timeouts": 350,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.79106274101081,
+          "mean_steps": 48.871,
+          "mean_success_steps": 48.871
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 82,
+        "behavior_value_eps_0.1": 16.427716224733757,
+        "behavior_value_eps_0.02": 22.215489280449187
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -100.00000000000043,
+          "start_gap": 126.28282217397373,
+          "max_state_gap": 168.6458051615141,
+          "exact_capped_return": -99.34295169575906,
+          "exact_success_500": 0.0,
+          "optimal_actions_fraction": 0.3162393162393162,
+          "mean_action_gap": 1.299296722038416
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99997648616348,
+          "start_gap": 126.28279866013679,
+          "max_state_gap": 189.24080957434683,
+          "exact_capped_return": -99.34293434207409,
+          "exact_success_500": 3.359566919693907e-06,
+          "optimal_actions_fraction": 0.3646723646723647,
+          "mean_action_gap": 1.2355675863333206
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.54140234329369,
+          "start_gap": 2.741419830679618,
+          "max_state_gap": 131.78128722312456,
+          "exact_capped_return": 23.541402343241813,
+          "exact_success_500": 0.9999999994367191,
+          "optimal_actions_fraction": 0.6552706552706553,
+          "mean_action_gap": 0.33458819816700974
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 6,
+      "metrics": {
+        "value_start": 23.870804773759733,
+        "start_gap": 2.412017400213575,
+        "max_state_gap": 83.5308958657753,
+        "exact_capped_return": 23.870804774565705,
+        "exact_success_500": 0.9999999933929574,
+        "optimal_actions_fraction": 0.6666666666666666,
+        "mean_action_gap": 0.3368761202996329,
+        "seconds": 9.035611667000012,
+        "episodes": 11369,
+        "training_goals": 11042,
+        "training_timeouts": 327,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.935719499245447,
+          "mean_steps": 48.751,
+          "mean_success_steps": 48.751
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 76,
+        "behavior_value_eps_0.1": 16.884294498125062,
+        "behavior_value_eps_0.02": 22.569032054455928
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -97.92904183772794,
+          "start_gap": 124.21186401170124,
+          "max_state_gap": 173.28534124537805,
+          "exact_capped_return": -97.60086299581906,
+          "exact_success_500": 0.28097748515212123,
+          "optimal_actions_fraction": 0.32193732193732194,
+          "mean_action_gap": 1.327969602788784
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.96978175706232,
+          "start_gap": 126.25260393103562,
+          "max_state_gap": 173.153956159031,
+          "exact_capped_return": -99.31749787687215,
+          "exact_success_500": 0.0035664009354922695,
+          "optimal_actions_fraction": 0.3418803418803419,
+          "mean_action_gap": 1.2202006216786976
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.870804773759733,
+          "start_gap": 2.412017400213575,
+          "max_state_gap": 83.5308958657753,
+          "exact_capped_return": 23.870804774565705,
+          "exact_success_500": 0.9999999933929574,
+          "optimal_actions_fraction": 0.6666666666666666,
+          "mean_action_gap": 0.3368761202996329
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 7,
+      "metrics": {
+        "value_start": 24.584519486502636,
+        "start_gap": 1.6983026874706724,
+        "max_state_gap": 92.63790263439054,
+        "exact_capped_return": 24.58451948674603,
+        "exact_success_500": 0.9999999985488806,
+        "optimal_actions_fraction": 0.7065527065527065,
+        "mean_action_gap": 0.2868234590832875,
+        "seconds": 9.159141458000022,
+        "episodes": 11507,
+        "training_goals": 11159,
+        "training_timeouts": 348,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.557740689169666,
+          "mean_steps": 48.238,
+          "mean_success_steps": 48.238
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 87,
+        "behavior_value_eps_0.1": 17.786863530560762,
+        "behavior_value_eps_0.02": 23.317146716979316
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.27834060299935,
+          "start_gap": 125.56116277697265,
+          "max_state_gap": 175.8573461954934,
+          "exact_capped_return": -98.70655618947548,
+          "exact_success_500": 0.08195419480430738,
+          "optimal_actions_fraction": 0.45014245014245013,
+          "mean_action_gap": 0.880510381405951
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99068465480505,
+          "start_gap": 126.27350682877835,
+          "max_state_gap": 179.73469436530587,
+          "exact_capped_return": -99.33607700281851,
+          "exact_success_500": 0.0013316214956277054,
+          "optimal_actions_fraction": 0.3504273504273504,
+          "mean_action_gap": 1.2729701343980904
+        },
+        {
+          "steps": 1000000,
+          "value_start": 24.584519486502636,
+          "start_gap": 1.6983026874706724,
+          "max_state_gap": 92.63790263439054,
+          "exact_capped_return": 24.58451948674603,
+          "exact_success_500": 0.9999999985488806,
+          "optimal_actions_fraction": 0.7065527065527065,
+          "mean_action_gap": 0.2868234590832875
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 8,
+      "metrics": {
+        "value_start": 23.64874907129728,
+        "start_gap": 2.6340731026760267,
+        "max_state_gap": 128.21951806788007,
+        "exact_capped_return": 23.64874907181424,
+        "exact_success_500": 0.9999999991329278,
+        "optimal_actions_fraction": 0.6723646723646723,
+        "mean_action_gap": 0.3540352495840733,
+        "seconds": 9.479257040999983,
+        "episodes": 11251,
+        "training_goals": 10905,
+        "training_timeouts": 346,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 23.55553217147831,
+          "mean_steps": 49.065,
+          "mean_success_steps": 49.065
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 75,
+        "behavior_value_eps_0.1": 16.548787586402025,
+        "behavior_value_eps_0.02": 22.327344230658046
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9996778650288,
+          "start_gap": 126.28250003900212,
+          "max_state_gap": 175.0775846950348,
+          "exact_capped_return": -99.34274373211274,
+          "exact_success_500": 4.9013655775086326e-05,
+          "optimal_actions_fraction": 0.32763532763532766,
+          "mean_action_gap": 1.3365977815679877
+        },
+        {
+          "steps": 50000,
+          "value_start": -99.99931602735923,
+          "start_gap": 126.28213820133254,
+          "max_state_gap": 184.66259995173905,
+          "exact_capped_return": -99.3423579745906,
+          "exact_success_500": 8.1133954338506e-05,
+          "optimal_actions_fraction": 0.3789173789173789,
+          "mean_action_gap": 1.2289723816738312
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.64874907129728,
+          "start_gap": 2.6340731026760267,
+          "max_state_gap": 128.21951806788007,
+          "exact_capped_return": 23.64874907181424,
+          "exact_success_500": 0.9999999991329278,
+          "optimal_actions_fraction": 0.6723646723646723,
+          "mean_action_gap": 0.3540352495840733
+        }
+      ]
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "seed": 9,
+      "metrics": {
+        "value_start": 23.863459846936724,
+        "start_gap": 2.419362327036584,
+        "max_state_gap": 80.84973261838695,
+        "exact_capped_return": 23.863459852021546,
+        "exact_success_500": 0.9999998313324289,
+        "optimal_actions_fraction": 0.6609686609686609,
+        "mean_action_gap": 0.33397808587962513,
+        "seconds": 9.054177417000119,
+        "episodes": 11309,
+        "training_goals": 10962,
+        "training_timeouts": 347,
+        "final_epsilon": 0.02,
+        "rollout": {
+          "episodes": 1000,
+          "goals": 1000,
+          "success_rate": 1.0,
+          "mean_capped_return": 24.037128387157484,
+          "mean_steps": 48.668,
+          "mean_success_steps": 48.668
+        },
+        "visited_pairs": 1404,
+        "zero_visit_pairs": 0,
+        "min_visits": 83,
+        "behavior_value_eps_0.1": 16.850418896133423,
+        "behavior_value_eps_0.02": 22.556888489231227
+      },
+      "checkpoints": [
+        {
+          "steps": 10000,
+          "value_start": -99.9675330350672,
+          "start_gap": 126.25035520904052,
+          "max_state_gap": 173.39481407552626,
+          "exact_capped_return": -99.31460448352107,
+          "exact_success_500": 0.003319856193821619,
+          "optimal_actions_fraction": 0.33903133903133903,
+          "mean_action_gap": 1.2487714828278575
+        },
+        {
+          "steps": 50000,
+          "value_start": -91.2519979316586,
+          "start_gap": 117.5348201056319,
+          "max_state_gap": 170.84990424001478,
+          "exact_capped_return": -90.91944590766279,
+          "exact_success_500": 0.3744525153630899,
+          "optimal_actions_fraction": 0.4301994301994302,
+          "mean_action_gap": 1.0811008935045412
+        },
+        {
+          "steps": 1000000,
+          "value_start": 23.863459846936724,
+          "start_gap": 2.419362327036584,
+          "max_state_gap": 80.84973261838695,
+          "exact_capped_return": 23.863459852021546,
+          "exact_success_500": 0.9999998313324289,
+          "optimal_actions_fraction": 0.6609686609686609,
+          "mean_action_gap": 0.33397808587962513
+        }
+      ]
+    }
+  ],
+  "planning_agreement": {
+    "max_value_difference": 1.1884537798323436e-10,
+    "action_agreement": 1.0
+  },
+  "epsilon_references": {
+    "0.1": {
+      "behavior_value_start": 19.948314550051975,
+      "greedy_value_start": 26.282822038817816
+    },
+    "0.02": {
+      "behavior_value_start": 25.100672812113704,
+      "greedy_value_start": 26.28282217404442
+    }
+  },
+  "summary": [
+    {
+      "algorithm": "sarsa",
+      "exploration": "fixed",
+      "n": 10,
+      "value_start_mean": 22.83934688550792,
+      "value_start_sd": 0.8463087999427428,
+      "start_gap_mean": 3.443475288465387,
+      "start_gap_sd": 0.8463087999427427,
+      "optimal_actions_fraction_mean": 0.6165242165242165,
+      "optimal_actions_fraction_sd": 0.02195355483654304,
+      "exact_success_500_mean": 0.9999998920390359,
+      "exact_success_500_sd": 2.822329530265857e-07,
+      "behavior_value_eps_0.1_mean": 15.623758864257288,
+      "behavior_value_eps_0.1_sd": 1.02862519073265,
+      "behavior_value_eps_0.02_mean": 21.493608017263917,
+      "behavior_value_eps_0.02_sd": 0.8808652321110676,
+      "zero_visit_pairs_mean": 0.0,
+      "zero_visit_pairs_sd": 0.0,
+      "seconds_mean": 8.176872029199979,
+      "seconds_sd": 0.4256469312485979,
+      "rollout_mean_steps_mean": 49.6312,
+      "rollout_mean_steps_sd": 0.6395220090035987,
+      "rollout_mean_capped_return_mean": 22.861663359336784,
+      "rollout_mean_capped_return_sd": 0.7775738637518176,
+      "rollout_success_rate_mean": 1.0,
+      "rollout_success_rate_sd": 0.0
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "fixed",
+      "n": 10,
+      "value_start_mean": 22.948180647594615,
+      "value_start_sd": 2.5510711437251508,
+      "start_gap_mean": 3.3346415263786944,
+      "start_gap_sd": 2.5510711437251503,
+      "optimal_actions_fraction_mean": 0.6085470085470085,
+      "optimal_actions_fraction_sd": 0.031186135995097865,
+      "exact_success_500_mean": 0.9999886651298813,
+      "exact_success_500_sd": 3.4220294557913354e-05,
+      "behavior_value_eps_0.1_mean": 16.180961080748553,
+      "behavior_value_eps_0.1_sd": 1.8081064891016299,
+      "behavior_value_eps_0.02_mean": 21.7045769904776,
+      "behavior_value_eps_0.02_sd": 2.35463169656776,
+      "zero_visit_pairs_mean": 0.0,
+      "zero_visit_pairs_sd": 0.0,
+      "seconds_mean": 8.719974870800035,
+      "seconds_sd": 0.045865317321896436,
+      "rollout_mean_steps_mean": 49.669599999999996,
+      "rollout_mean_steps_sd": 2.3898022791296634,
+      "rollout_mean_capped_return_mean": 22.886242963676796,
+      "rollout_mean_capped_return_sd": 2.691834300114454,
+      "rollout_success_rate_mean": 1.0,
+      "rollout_success_rate_sd": 0.0
+    },
+    {
+      "algorithm": "sarsa",
+      "exploration": "decay",
+      "n": 10,
+      "value_start_mean": 24.278808597562893,
+      "value_start_sd": 1.353039495897783,
+      "start_gap_mean": 2.0040135764104154,
+      "start_gap_sd": 1.3530394958977832,
+      "optimal_actions_fraction_mean": 0.7515669515669516,
+      "optimal_actions_fraction_sd": 0.01587962390585259,
+      "exact_success_500_mean": 0.999991803800584,
+      "exact_success_500_sd": 2.1681861891142286e-05,
+      "behavior_value_eps_0.1_mean": 17.59587314789257,
+      "behavior_value_eps_0.1_sd": 1.4279359095381403,
+      "behavior_value_eps_0.02_mean": 23.029556020834328,
+      "behavior_value_eps_0.02_sd": 1.3682669648612893,
+      "zero_visit_pairs_mean": 0.0,
+      "zero_visit_pairs_sd": 0.0,
+      "seconds_mean": 8.623622875100022,
+      "seconds_sd": 0.8814550485549493,
+      "rollout_mean_steps_mean": 48.41909999999999,
+      "rollout_mean_steps_sd": 1.160962479056829,
+      "rollout_mean_capped_return_mean": 24.348417875953444,
+      "rollout_mean_capped_return_sd": 1.4147587962125758,
+      "rollout_success_rate_mean": 1.0,
+      "rollout_success_rate_sd": 0.0
+    },
+    {
+      "algorithm": "q_learning",
+      "exploration": "decay",
+      "n": 10,
+      "value_start_mean": 23.718526517134205,
+      "value_start_sd": 0.5255610055042735,
+      "start_gap_mean": 2.5642956568391027,
+      "start_gap_sd": 0.5255610055042734,
+      "optimal_actions_fraction_mean": 0.6598290598290598,
+      "optimal_actions_fraction_sd": 0.03392852866607271,
+      "exact_success_500_mean": 0.9999999669937388,
+      "exact_success_500_sd": 6.722690161330264e-08,
+      "behavior_value_eps_0.1_mean": 16.680247980290048,
+      "behavior_value_eps_0.1_sd": 0.6655685367052854,
+      "behavior_value_eps_0.02_mean": 22.406928202881055,
+      "behavior_value_eps_0.02_sd": 0.5512213364754728,
+      "zero_visit_pairs_mean": 0.0,
+      "zero_visit_pairs_sd": 0.0,
+      "seconds_mean": 9.074693045799995,
+      "seconds_sd": 0.16194916002071297,
+      "rollout_mean_steps_mean": 48.8745,
+      "rollout_mean_steps_sd": 0.45575755006850266,
+      "rollout_mean_capped_return_mean": 23.784201990986187,
+      "rollout_mean_capped_return_sd": 0.5577986631098896,
+      "rollout_success_rate_mean": 1.0,
+      "rollout_success_rate_sd": 0.0
+    }
+  ]
+}

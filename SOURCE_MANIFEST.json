@@ -1,0 +1,11 @@
+{
+  "original_path": "/Users/prinzo99/Downloads/RLCompetition1-main",
+  "files_sha256": {
+    "icy_gridworld/__init__.py": "f7ad7627d4ca82a4236e47db4c4961e30c5c40d19752dfaf299928bad236c9be",
+    "icy_gridworld/env.py": "303d6d06ae653b53e442d20068f527d10887bce8a13c46281d22a8328915e9c0",
+    "icy_gridworld/map.py": "e344d7fa3e61f6b248da8c1c9dec5adf786f72fc4cee4634eabb450f4443de5a",
+    "icy_gridworld/movement.py": "e40bd1e459f7af7cf3335d7b9514948cb2bc8ba3b0cde17db25ff7f8daa4142a",
+    "icy_gridworld/transitions.py": "5902453e32af1105a944b984f901ae73d2cdb8f449a4a015a651c52a46edc462"
+  },
+  "environment_modified": false
+}

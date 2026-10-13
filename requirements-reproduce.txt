@@ -1,0 +1,4 @@
+# Recorded experiment runtime. Use Python 3.12 for closest reproduction.
+gymnasium==1.3.0
+numpy==2.3.5
+-e .[test]
